@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <title>Hello, world!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            background-image: url("https://picsum.photos/1920/1080/?random=1");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container {
+            width: 500px;
+            height: 550px;
+            border-radius: 1rem;
+        }
+
+        .form-control {
+            border-left: none;
+
+        }
+
+        .input-group-text {
+            background-color: #fff;
+            border-right: none;
+        }
+
+        .form-row {
+            width: 90%;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .container::before {
+            content: '';
+            background: url('./img/01.png');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            z-index: 999;
+        }
+
+        #user {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(21, 101, 251, 0.75);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="user" class=""><img src="./img/04.png" style="width: 75%; margin-top: 10px;"></div>
+        <div class="row justify-content-center w-100 mx-auto h-100">
+            <div class="col-12 h-100">
+                <form class="h-100 d-flex align-items-center">
+                    <div class="form-row flex-column text-center mx-auto h-75 justify-content-around">
+                        <h1 class="text-secondary">Sign In</h1>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="./img/02.png" style="width: 20px; height: 20px;">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control form-control-lg" id="inputEmail3"
+                                placeholder="Username">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><img src="./img/03.png"
+                                        style="width: 20px; height: 20px;"></div>
+                            </div>
+                            <input type="password" class="form-control form-control-lg" id="inputEmail3"
+                                placeholder="Password">
+                        </div>
+
+                        <button class="btn btn-primary btn-lg">Login</button>
+
+                        <div class="form-row no-gutters w-100">
+                            <div class="form-check form-check-inline col-5 m-0">
+                                <input class="form-check-input " type="checkbox" name="inlineRadioOptions"
+                                    id="inlineRadio1" value="option1">
+                                <label class="form-check-label text-white" for="inlineRadio1">Remember me</label>
+                            </div>
+                            <a href="#" class="text-white col-5 offset-2 text-right">Forgot Password?</a>
+
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
